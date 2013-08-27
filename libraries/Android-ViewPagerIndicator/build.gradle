@@ -1,0 +1,29 @@
+apply plugin: 'android-library'
+
+dependencies {
+    compile 'com.android.support:support-v13:13.0.0'
+    //compile files('library/libs/android-support-v4.jar')
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "18.0.1"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 18
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'library/AndroidManifest.xml'
+            java.srcDirs = ['library/src']
+            resources.srcDirs = ['library/src']
+            aild.srcDirs = ['library/src']
+            renderscript.srcDirs = ['library/src']
+            res.srcDirs = ['library/res']
+            assets.srcDirs = ['library/assets']
+        }
+
+    }
+}

@@ -1,0 +1,5 @@
+include ':libraries:Android-ViewPagerIndicator'
+include ':libraries:Android-Universal-Image-Loader'
+include ':libraries:NineOldAndroids'
+include ':libraries:Android-PullToRefresh'
+include ':GradleTemplate'

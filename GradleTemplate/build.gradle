@@ -1,0 +1,57 @@
+apply plugin: 'android'
+
+dependencies {
+
+    // support artifact libs
+    compile 'com.google.android.gms:play-services:3.1.+'
+    compile 'com.android.support:appcompat-v7:18.0.0'
+    //compile "com.android.support:support-v4:18.0.+"
+
+    // required library projects - see root/settings.gradle
+    compile project(':libraries:Android-ViewPagerIndicator')
+    compile project(':libraries:Android-Universal-Image-Loader')
+    compile project(':libraries:NineOldAndroids')
+    compile project(':libraries:Android-PullToRefresh')
+
+    // libs dir
+    compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "18.0.1"
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 18
+        versionCode = 1
+        versionName = "0.1"
+        //testPackageName "com.test.foo"
+        //testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    /*
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+        }
+
+        myConfig {
+            storeFile file("other.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    */
+
+    /*
+        productFlavors {
+        flavor1 {
+        }
+        flavor2 {
+            proguardFile 'some-other-rules.txt'
+        }
+    }
+    */
+}
