@@ -23,6 +23,7 @@ The idea is too add useful gradle tasks that I come accross to the template proj
 - try git plugin to clone repos
 - pull in dependencies from maven
 - instrument tests
+- gradle.properties
 
 <b>Prerequisites:</b>
 - Make sure you have the 'Android Support Repository' downloaded through the SDK Manager. This will mean you can compile in the support repo dependencies using their dependency artifacts instead of using their absolute paths or having to copy a jar into your project. This means you will always have the most upto date downloaded support libs.
